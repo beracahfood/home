@@ -1,0 +1,1363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Our Products</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --darkgreen: #06402B;
+      --mint: #A8CBB7;
+      --ivory: #FAF9F6;
+      --bg: #F5F5F5;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0; font-family: 'Inter', sans-serif;
+      background: var(--bg); color: #222;
+      line-height: 1.6;
+    }
+    header {
+      background: var(--ivory);
+      padding: 20px 40px;
+      display: flex; justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    }
+    .brand { font-size: 24px; font-weight: 700; color: var(--darkgreen); }
+    nav a {
+      margin-left: 24px;
+      text-decoration: none; font-weight: 600;
+      color: var(--darkgreen); position: relative;
+    }
+    nav a::after {
+      content: ''; width: 0; height: 2px;
+      background: var(--darkgreen); position: absolute;
+      bottom: -4px; left: 0; transition: width .3s;
+    }
+    nav a:hover::after { width:100%; }
+
+    .hero {
+      background: url('OP-1.jpg') center/cover no-repeat;
+      height: 60vh;
+      display: flex; justify-content: center; align-items: center;
+      position: relative;
+    }
+    .hero::after {
+      content: ''; position: absolute; inset: 0;
+      background: rgba(0,0,0,0.4);
+    }
+    .hero-text {
+      position: relative; color: white; text-align: center;
+    }
+    .hero-text h1 {
+      font-size: 36px;
+    }
+    .hero-text p {
+      font-size: 18px;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    .banner {
+      background-color: #dc3545;
+      color: white;
+      padding: 15px;
+      text-align: center;
+      font-size: 16px;
+      font-weight: 600;
+    }
+    .banner a {
+      color: white;
+      text-decoration: underline;
+      font-weight: bold;
+    }
+    footer {
+      background: #000;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+      margin-top: 40px;
+    }
+  
+
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .products-section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+			align-items: center;
+        }
+        .products-card {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            width: 25%;
+            margin: 20px 0;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+        }
+        .products-card:hover {
+            transform: translateY(-10px);
+        }
+        .products-card img {
+            width: 100%;
+            border-radius: 8px;
+        }
+        .products-card h3 {
+            margin-top: 10px;
+            color: #2C6B2F;
+        }
+        .products-card p {
+            font-size: 16px;
+            line-height: 1.6;
+        }
+		.products-cardz {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            width: 25%;
+            margin: 20px 0;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+        }
+        .products-cardz:hover {
+            transform: translateY(-10px);
+        }
+        .products-cardz img {
+            width: 100%;
+            border-radius: 8px;
+        }
+        .products-cardz h3 {
+            margin-top: 10px;
+            color: #2C6B2F;
+        }
+        .products-cardz p {
+            font-size: 16px;
+            line-height: 1.6;
+			}
+        footer {
+            background: black;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+            color: #666;
+            font-size: 14px;
+        }
+		.coming-soon-label {
+  background-color: #e53935;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 6px;
+  text-align: center;
+  font-weight: bold;
+  margin-top: 10px;
+  font-size: 0.95em;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+       .product-heading {
+            text-align: center; 
+            color: #06402B; 
+            padding: 10px 0;
+}
+.banner {
+            background-color: #dc3545; /* Red background */
+            color: #ffffff; /* White text */
+            padding: 15px;
+            text-align: center;
+            font-size: 16px;
+            border-bottom: 2px solid #c82333; /* Darker red border */
+        }
+        .banner a {
+            color: #ffffff; /* White links */
+            text-decoration: underline;
+            font-weight: bold;
+            margin: 0 5px;
+        }
+        .banner a:hover {
+            color: #e9ecef; /* Lighter white on hover */
+        }
+		
+    </style>
+</head>
+<body>
+
+<header>
+    <h1 align ="center">BERACAH FOODS</h1></align>
+    
+
+
+<nav>
+    <a href="Homepage.html">Home</a>
+      <a href="About.html">About</a>
+      <a href="Products.html">Products</a>
+      <a href="Contact.html">Contact</a>
+	
+</nav>
+</header>
+<section class="hero">
+  <div class="hero-text">
+    <h1>Shop by Science, Delivered by Nature</h1>
+    <p>Explore Beracah’s curated range of powdered, bottled, and freeze‑dried products—crafted to empower your wellness journey.</p>
+  </div>
+</section>
+<div class="banner">
+        Unfortunately our in-website ordering is unavailable at the moment, however please feel free to order via 
+        <a href="new contact.html">email</a>
+</div>
+<div class="container">
+    <section id="products" class="products-section">
+            <div class="product-heading">
+			<h1>Our Products</h1></div>
+            <p align="center">Explore our wide range of high-quality, freshly processed agricultural products. From powdered products to bottled organic products, we ensure each product maintains the highest standards of quality and freshness.</p>
+			<hr color ="#06402B" width= "100%">
+            <h3 font color="#2C6B2F">Our Powdered Options</h3>
+            <div class="products-section">
+                <!-- Product 1 -->
+                
+                
+
+                <!-- Product 3 -->
+                <div class="products-card">
+				    <div class="coming-soon-label">Coming Soon</div>
+                    <img src="P-CAR.jpg" alt="Powdered Carrots" width ="400" height="400">
+                    <h3>Powdered Carrot</h3>
+                    <p>Boost your meals with the natural sweetness and vibrant nutrients of carrots in a convenient powdered form. Rich in beta-carotene and fiber, perfect for soups, smoothies, and baked goods.</p>
+                    <label for="sizes3">Select Size:</label>
+                    <select onchange="updatePrice(this)">
+                    
+                        <option value="250g">250g</option>
+                        <option value="250g">250g</option>
+                        <option value="1kg">1kg</option>
+                    </select>
+                    <p class="price" id="price3">R300.00</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+
+                <!-- Product 4 -->
+                <div class="products-card">
+				    <div class="coming-soon-label">Coming Soon</div>
+                    <img src="P-CEL.jpg" alt="Powdered Celery" width ="400" height="400">
+                    <h3>Powdered Celery</h3>
+                    <p>A refreshing addition to juices and soups, powdered celery is rich in vitamins and hydration-promoting properties. A pantry essential for health enthusiasts.</p>
+                    <label for="sizes4">Select Size:</label>
+                    <select onchange="updatePrice(this)">
+                    
+                        <option value="250g">250g</option>
+                        <option value="500g">500g</option>
+                        <option value="1kg">1kg</option>
+                    </select>
+                    <p class="price" id="price4">R300.00</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+
+                <!-- Product 5 -->
+                <div class="products-card">
+				    <div class="coming-soon-label">Coming Soon</div>
+                    <img src="P-ROS.jpg" alt="Powdered Rosechip" height ="400" width ="400">
+                    <h3>Powdered Rosechip</h3>
+                    <p>Loaded with vitamin C, powdered rosehip supports immune health and glowing skin. A perfect addition to teas, smoothies, and skincare routines.</p>
+                    <label for="sizes5">Select Size:</label>
+                    <select onchange="updatePrice(this)">
+                    
+                        <option value="250g">250g</option>
+                        <option value="500g">500g</option>
+                        <option value="1kg">1kg</option>
+                    </select>
+                    <p class="price" id="price5">R300.00</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+
+                <!-- Product 6 -->
+                <div class="products-card">
+				    <div class="coming-soon-label">Coming Soon</div>
+                    <img src="P-BEE.jpg" alt="Organic Peanut Butter" width ="400" height ="400">
+                    <h3>Powdered Beetroot</h3>
+                    <p>Enhance your recipes with the earthy sweetness and rich color of beetroot powder, packed with nitrates and antioxidants for natural energy and vitality.</p>
+                    <label for="sizes6">Select Size:</label>
+                    <select onchange="updatePrice(this)">
+                        <option value="250g">250g</option>
+                        <option value="500g">500g</option>
+                        <option value="1kg">1kg</option>
+                    </select>
+                    <p class="price" id="price6">R300.00</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+				<div class="products-card">
+				    <div class="coming-soon-label">Coming Soon</div>
+                    <img src="P-PCA.jpg" alt="Organic Peanut Butter" width ="400" height ="400">
+                    <h3>Powdered Red Cabbage</h3>
+                    <p>Brighten your dishes with the vibrant hue and health benefits of red cabbage powder, rich in vitamin C and phytonutrients. Great for soups and smoothies.</p>
+                    <label for="sizes6">Select Size:</label>
+                    <select onchange="updatePrice(this)">
+                        <option value="250g">250g</option>
+                        <option value="500g">500g</option>
+                        <option value="1kg">1kg</option>
+                    </select>
+                    <p class="price" id="price6">R300.00</p>
+                    <button class="add-to-cart">Add to Cart</button>
+				</div>	
+				
+                <div class="products-card">
+				    <div class="coming-soon-label">Coming Soon</div>
+                    <img src="P-KAL.jpg" alt="Organic Peanut Butter" width ="400" height ="400">
+                    <h3>Powdered Kale</h3>
+                    <p>Supercharge your diet with powdered kale, packed with vitamins A, C, and K. A versatile green that adds a nutrient-dense punch to your shakes, soups, or sauces.</p>
+                    <label for="sizes6">Select Size:</label>
+                    <select onchange="updatePrice(this)">
+                        <option value="250g">250g</option>
+                        <option value="500g">500g</option>
+                        <option value="1kg">1kg</option>
+                    </select>
+                    <p class="price" id="price6">R300.00</p>
+                    <button class="add-to-cart">Add to Cart</button>
+				</div>
+                <div class="products-card">
+				    <div class="coming-soon-label">Coming Soon</div>
+                    <img src="P-SPI.jpg" alt="Organic Peanut Butter" width ="400" height ="400">
+                    <h3>Powdered Spinach</h3>
+                    <p>Get all the iron and antioxidants of fresh spinach in an easy-to-use powder. Blend into smoothies, soups, or pasta sauces for a healthy boost.</p>
+                    <label for="sizes6">Select Size:</label>
+                    <select onchange="updatePrice(this)">
+                        <option value="250g">250g</option>
+                        <option value="500g">500g</option>
+                        <option value="1kg">1kg</option>
+                    </select>
+                    <p class="price" id="price6">R300.00</p>
+                    <button class="add-to-cart">Add to Cart</button>
+				</div>
+                
+                <div class="products-card">
+				    <div class="coming-soon-label">Coming Soon</div>
+                    <img src="P-MOR.jpg" alt="Organic Peanut Butter" width ="400" height ="400">
+                    <h3>Powdered Moringa</h3>
+                    <p>A nutrient-dense green powder packed with protein, vitamins, and minerals, perfect for smoothies, soups, or wellness drinks.</p>
+                    <label for="sizes6">Select Size:</label>
+                    <select onchange="updatePrice(this)">
+                        <option value="250g">250g</option>
+                        <option value="500g">500g</option>
+                        <option value="1kg">1kg</option>
+                    </select>
+                    <p class="price" id="price6">R300.00</p>
+                    <button class="add-to-cart">Add to Cart</button>
+				</div>
+                
+                
+                <div class="products-card">
+				    <div class="coming-soon-label">Coming Soon</div>
+                    <img src="P-PSWE.jpg" alt="Organic Peanut Butter" width ="400" height ="400">
+                    <h3>Powdered Purple Sweet Potato</h3>
+                    <p>Add color and nutrition to your recipes with powdered purple sweet potato, rich in antioxidants and natural sweetness.</p>
+                    <label for="sizes6">Select Size:</label>
+                    <select onchange="updatePrice(this)">
+                        <option value="250g">250g</option>
+                        <option value="500g">500g</option>
+                        <option value="1kg">1kg</option>
+                    </select>
+                    <p class="price" id="price6">R300.00</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="products-card">
+				    <div class="coming-soon-label">Coming Soon</div>
+                    <img src="P-YSWE.jpg" alt="Powdered Yellow Sweet Potato" width ="400" height ="400">
+                    <h3>Powdered Yellow Sweet Potato</h3>
+                    <p>Naturally sweet and full of beta-carotene, powdered yellow sweet potato is perfect for baking, smoothies, or soups.</p>
+                    <label for="sizes6">Select Size:</label>
+                    <select onchange="updatePrice(this)">
+                        <option value="250g">250g</option>
+                        <option value="500g">500g</option>
+                        <option value="1kg">1kg</option>
+                    </select>
+                    <p class="price" id="price6">R300.00</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+               
+			    <div class="products-card">
+				    <div class="coming-soon-label">Coming Soon</div>
+                    <img src="Peas Protein Powder.jpg" alt="Peas Protein Powder" width ="400" height ="400">
+                    <h3>Powdered Pea Protein</h3>
+                    <p>A plant-based protein powerhouse, powdered pea protein is an excellent addition to shakes, smoothies, and fitness-focused recipes.</p>
+                    <label for="sizes6">Select Size:</label>
+                    <select onchange="updatePrice(this)">
+                        <option value="250g">250g</option>
+                        <option value="500g">500g</option>
+                        <option value="1kg">1kg</option>
+                    </select>
+                    <p class="price" id="price6">R300.00</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="products-card">
+				    <div class="coming-soon-label">Coming Soon</div>
+                    <img src="Sun-Dried Peaches.jpg" alt="Sun-Dried Peaches" width ="400" height ="400">
+                    <h3>Sun-Dried Peaches</h3>
+                    <p>Sweet and tangy peaches, sun-dried for natural flavor and chewy texture. Perfect for snacking or baking.</p>
+                    <label for="sizes6">Select Size:</label>
+                    <select onchange="updatePrice(this)">
+                        <option value="250g">250g</option>
+                        <option value="500g">500g</option>
+                        <option value="1kg">1kg</option>
+                    </select>
+                    <p class="price" id="price6">R300.00</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+			</div class="products-section">
+			<h3>Our Freeze-Dried Options</h3>
+			
+				
+				
+				 <div class="products-section">
+				 <div class="products-cardz">
+				    <div class="coming-soon-label">Coming Soon</div>
+                    <img src="FD-BEA.jpg" alt="Organic Tomato Sauce" width ="400" height ="400">
+                    <h3>Freeze-Dried Beans</h3>
+                    <p>Nutritious, ready-to-use beans packed with fiber and protein. Perfect for soups, stews, and salads.</p>
+                    <label for="sizes1">Select Size:</label>
+                    <select onchange="updatePrice(this)">
+                    
+                        
+                        <option value="1kg">500g</option>
+                        <option value="2kg">1kg</option>
+                    </select>
+                    <p class="price" id="price1">R100.00</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="products-cardz">
+				    <div class="coming-soon-label">Coming Soon</div>
+                    <img src="FD-PEA.jpg" alt="Premium Olive Oil" width ="400" height ="400">
+                    <h3>Freeze-Dried Peas</h3>
+                    <p>Crisp and nutrient-rich peas, great for snacking or rehydrating in soups and casseroles.</p>
+                    <label for="sizes2">Select Size:</label>
+                    <select onchange="updatePrice(this)">
+                    
+                        
+                        <option value="500ml">500g</option>
+                        <option value="1L">1kg</option>
+                    </select>
+                    <p class="price" id="price2">R100.00</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="products-cardz">
+				    <div class="coming-soon-label">Coming Soon</div>
+                    <img src="FD-CAR.jpg" alt="Organic Honey" width ="400" height="400">
+                    <h3>Freeze-Dried Carrots</h3>
+                    <p>Fresh, sweet carrots freeze-dried for convenience. A vibrant addition to soups, stews, or side dishes.</p>
+                    <label for="sizes3">Select Size:</label>
+                    <select onchange="updatePrice(this)">
+                    
+                         
+                        <option value="500g">500g</option>
+                        <option value="1kg">1kg</option>
+                    </select>
+                    <p class="price" id="price3">R100.00</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+
+                <!-- Product 4 -->
+                <div class="products-card">
+				    <div class="coming-soon-label">Coming Soon</div>
+                    <img src="FD-TOM.jpg" alt="Fresh Green Peas" width ="400" height="400">
+                    <h3>Freeze-Dried Tomato</h3>
+                    <p>Tangy, ripe tomatoes freeze-dried to preserve flavor and nutrients. Ideal for sauces, soups, or snacks.</p>
+                    <label for="sizes4">Select Size:</label>
+                    <select onchange="updatePrice(this)">
+                    
+                         
+                        <option value="500g">500g</option>
+                        <option value="1kg">1kg</option>
+                    </select>
+                    <p class="price" id="price4">R100.00</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+
+                <!-- Product 5 -->
+                <div class="products-card">
+				    <div class="coming-soon-label">Coming Soon</div>
+                    <img src="FD-EGGS.jpg" alt="Organic Apple Juice" height ="400" width ="400">
+                    <h3>Freeze-Dried Eggs</h3>
+                    <p>Convenient, protein-packed eggs in freeze-dried form. Just add water for instant use in cooking or baking.</p>
+                    <label for="sizes5">Select Size:</label>
+                    <select onchange="updatePrice(this)">
+                    
+                        <option value="500ml">500ml</option>
+                        <option value="1L">1L</option>
+                        <option value="2L">2L</option>
+                    </select>
+                    <p class="price" id="price5">R100.00</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+
+                <!-- Product 6 -->
+                <div class="products-card">
+				    <div class="coming-soon-label">Coming Soon</div>
+                    <img src="FD-SWE.jpg" alt="Organic Peanut Butter" width ="400" height ="400">
+                    <h3>Freeze-Dried Sweet Potato</h3>
+                    <p>Naturally sweet and fiber-rich sweet potatoes, perfect for soups, baking, or as a healthy snack.</p>
+                    <label for="sizes6">Select Size:</label>
+                    <select onchange="updatePrice(this)">
+                         
+                        <option value="500g">500g</option>
+                        <option value="1kg">1kg</option>
+                    </select>
+                    <p class="price" id="price6">R100.00</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="products-card">
+				    <div class="coming-soon-label">Coming Soon</div>
+                    <img src="FD-KAL.jpg" alt="Organic Peanut Butter" width ="400" height ="400">
+                    <h3>Freeze-Dried Kale</h3>
+                    <p>Nutrient-dense kale, freeze-dried for easy use in smoothies, soups, or as a healthy snack.</p>
+                    <label for="sizes6">Select Size:</label>
+                    <select onchange="updatePrice(this)">
+                         
+                        <option value="500g">500g</option>
+                        <option value="1kg">1kg</option>
+                    </select>
+                    <p class="price" id="price6">R100.00</p>
+                    <button class="add-to-cart">Add to Cart</button>
+				</div>
+                <div class="products-card">
+				    <div class="coming-soon-label">Coming Soon</div>
+                    <img src="FD-SPI.jpg" alt="Organic Peanut Butter" width ="400" height ="400">
+                    <h3>Freeze-Dried Spinach</h3>
+                    <p>Leafy spinach, freeze-dried to lock in nutrients. Perfect for smoothies, cooking, or adding greens on the go.</p>
+                    <label for="sizes6">Select Size:</label>
+                    <select onchange="updatePrice(this)">
+                         
+                        <option value="500g">500g</option>
+                        <option value="1kg">1kg</option>
+                    </select>
+                    <p class="price" id="price6">R100.00</p>
+                    <button class="add-to-cart">Add to Cart</button>
+				</div>
+                <div class="products-card">
+				    <div class="coming-soon-label">Coming Soon</div>
+                    <img src="FD-COW.jpg" alt="Organic Peanut Butter" width ="400" height ="400">
+                    <h3>Freeze-Dried Cow-Heel Broth</h3>
+                    <p>Rich, collagen-packed cow heel broth in freeze-dried form. Just add water for a comforting, nutritious soup base.</p>
+                    <label for="sizes6">Select Size:</label>
+                    <select onchange="updatePrice(this)">
+                         
+                        <option value="500g">500g</option>
+                        <option value="1kg">1kg</option>
+                    </select>
+                    <p class="price" id="price6">R100.00</p>
+                    <button class="add-to-cart">Add to Cart</button>
+				</div>
+				<div class="products-card">
+				    <div class="coming-soon-label">Coming Soon</div>
+                    <img src="FD-CNOO.jpg" alt="Organic Peanut Butter" width ="400" height ="400">
+                    <h3>Freeze-Dried Chicken-Noodle Soup</h3>
+                    <p>Classic chicken noodle soup, freeze-dried for easy preparation. A warm, hearty meal in minutes.</p>
+                    <label for="sizes6">Select Size:</label>
+                    <select onchange="updatePrice(this)">
+                         
+                        <option value="500g">500g</option>
+                        <option value="1kg">1kg</option>
+                    </select>
+                    <p class="price" id="price6">R100.00</p>
+                    <button class="add-to-cart">Add to Cart</button>
+				</div>
+                <div class="products-card">
+				    <div class="coming-soon-label">Coming Soon</div>
+                    <img src="FD-MIX.jpg" alt="Organic Peanut Butter" width ="400" height ="400">
+                    <h3>Freeze-Dried Mixed Vegetables</h3>
+                    <p>A colorful medley of freeze-dried vegetables for soups, casseroles, or healthy snacks.</p>
+                    <label for="sizes6">Select Size:</label>
+                    <select onchange="updatePrice(this)">
+                         
+                        <option value="500g">500g</option>
+                        <option value="1kg">1kg</option>
+                    </select>
+                    <p class="price" id="price6">R100.00</p>
+                    <button class="add-to-cart">Add to Cart</button>
+				</div>
+                <div class="products-card">
+				    <div class="coming-soon-label">Coming Soon</div>
+                    <img src="FD-CBON.jpg" alt="Organic Peanut Butter" width ="400" height ="400">
+                    <h3>Freeze-Dried Chicken-Bone Broth</h3>
+                    <p>Collagen-rich chicken feet bone broth, freeze-dried for a nourishing, protein-packed soup base.</p>
+                    <label for="sizes6">Select Size:</label>
+                    <select onchange="updatePrice(this)">
+                         
+                        <option value="500g">500g</option>
+                        <option value="1kg">1kg</option>
+                    </select>
+                    <p class="price" id="price6">R100.00</p>
+                    <button class="add-to-cart">Add to Cart</button>
+				</div>
+				</div class="products-section">
+			<h3>Our Bottled Options</h3>
+			
+				
+				
+				 <div class="products-section">
+				 
+				<div class="products-card">
+				    <div class="coming-soon-label">Coming Soon</div>
+                    <img src="F-BRC.jpg" alt="Organic Tomato Sauce" width ="400" height ="400">
+                    <h3>Fermented Brocolli,Radish & Carrots</h3>
+                    <p>A delicious and natural tomato sauce made from fresh, organic ingredients. Perfect for pasta, pizza, or as a dipping sauce.</p>
+                    <label for="sizes1">Select Size:</label>
+                    <select onchange="updatePrice(this)">
+                    
+                        <option value="500g">250g</option>
+                        <option value="1kg">500g</option>
+                        <option value="2kg">1kg</option>
+                    </select>
+                    <p class="price" id="price1">R250.00</p>
+                    <button class="add-to-cart">Add to Cart</button>
+					<button onclick="showIngredients('Powdered Papaya', '')">View Ingredients</button>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="products-card">
+				    <div class="coming-soon-label">Coming Soon</div>
+                    <img src="F-BC.jpg" alt="Premium Olive Oil" width ="400" height ="400">
+                    <h3>Fermented Beetroot & Carrots</h3>
+                    <p>Cold-pressed olive oil, perfect for cooking or as a dressing for salads. Full of antioxidants and healthy fats.</p>
+                    <label for="sizes2">Select Size:</label>
+                    <select onchange="updatePrice(this)">
+                    
+                        <option value="250ml">250g</option>
+                        <option value="500ml">500g</option>
+                        <option value="1L">1kg</option>
+                    </select>
+                    <p class="price" id="price2">R100.00</p>
+                    <button class="add-to-cart">Add to Cart</button>
+					<button onclick="showIngredients('Powdered Papaya', '')">View Ingredients</button>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="products-card">
+				    <div class="coming-soon-label">Coming Soon</div>
+                    <img src="F-BB.jpg" alt="Organic Honey" width ="400" height="400">
+                    <h3>Fermented Black Beans</h3>
+                    <p>Pure organic honey sourced from local beekeepers. Sweet, raw, and unprocessed, perfect for sweetening tea or as a spread.</p>
+                    <label for="sizes3">Select Size:</label>
+                    <select onchange="updatePrice(this)">
+                    
+                        <option value="250g">250g</option>
+                        <option value="500g">500g</option>
+                        <option value="1kg">1kg</option>
+                    </select>
+                    <p class="price" id="price3">R1.00</p>
+                    <button class="add-to-cart">Add to Cart</button>
+					<button onclick="showIngredients('Powdered Papaya', '')">View Ingredients</button>
+                </div>
+
+                <!-- Product 4 -->
+                <div class="products-card">
+				    <div class="coming-soon-label">Coming Soon</div>
+                    <img src="F-BCA.jpg" alt="Fresh Green Peas" width ="400" height="400">
+                    <h3>Fermented Brocolli & Cauliflower</h3>
+                    <p>High-quality, organic green peas, perfect for cooking or as an ingredient in salads, soups, and stews.</p>
+                    <label for="sizes4">Select Size:</label>
+                    <select onchange="updatePrice(this)">
+                    
+                        <option value="250g">250g</option>
+                        <option value="500g">500g</option>
+                        <option value="1kg">1kg</option>
+                    </select>
+                    <p class="price" id="price4">R0.00</p>
+                    <button class="add-to-cart">Add to Cart</button>
+					<button onclick="showIngredients('Powdered Papaya', '')">View Ingredients</button>
+                </div>
+
+                <!-- Product 5 -->
+                <div class="products-card">
+				    <div class="coming-soon-label">Coming Soon</div>
+                    <img src="F-CGG.jpg" alt="Organic Apple Juice" height ="400" width ="400">
+                    <h3>Fermented Carrots, Ginger & Garlic</h3>
+                    <p>Freshly pressed organic apple juice, without any preservatives or added sugars. A refreshing and healthy drink option.</p>
+                    <label for="sizes5">Select Size:</label>
+                    <select onchange="updatePrice(this)">
+                    
+                        <option value="500ml">500ml</option>
+                        <option value="1L">1L</option>
+                        <option value="2L">2L</option>
+                    </select>
+                    <p class="price" id="price5">R0.00</p>
+                    <button class="add-to-cart">Add to Cart</button>
+					<button onclick="showIngredients('Powdered Papaya', '')">View Ingredients</button>
+                </div>
+
+                <!-- Product 6 -->
+                <div class="products-card">
+				    <div class="coming-soon-label">Coming Soon</div>
+                    <img src="F-CC.jpg" alt="Organic Peanut Butter" width ="400" height ="400">
+                    <h3>Fermented Curried Cauliflower</h3>
+                    <p> </p>
+                    <label for="sizes6">Select Size:</label>
+                    <select onchange="updatePrice(this)">
+                        <option value="250g">250g</option>
+                        <option value="500g">500g</option>
+                        <option value="1kg">1kg</option>
+                    </select>
+                    <p class="price" id="price6">R0.00</p>
+                    <button class="add-to-cart">Add to Cart</button>
+					<button onclick="showIngredients('Powdered Papaya', '')">View Ingredients</button>
+                </div>
+				<div class="products-card">
+				    <div class="coming-soon-label">Coming Soon</div>
+                    <img src="F-FDC.jpg" alt="Organic Peanut Butter" width ="400" height ="400">
+                    <h3>Fermented Fiery-Dill Cucumbers</h3>
+                    <p> </p>
+                    <label for="sizes6">Select Size:</label>
+                     <select onchange="updatePrice(this)">
+                        <option value="250g">250g</option>
+                        <option value="500g">500g</option>
+                        <option value="1kg">1kg</option>
+                    </select>
+                    <p class="price" id="price6">R0.00</p>
+                    <button class="add-to-cart">Add to Cart</button>
+					<button onclick="showIngredients('Powdered Papaya', '')">View Ingredients</button>
+				</div>	
+				<div class="products-card">
+				    <div class="coming-soon-label">Coming Soon</div>
+                    <img src="F-OB.jpg" alt="Organic Peanut Butter" width ="400" height ="400">
+                    <h3>Fermented Organic Beetroot</h3>
+                    <p> </p>
+                    <label for="sizes6">Select Size:</label>
+                    <select onchange="updatePrice(this)">
+
+                        <option value="250g">250g</option>
+                        <option value="500g">500g</option>
+                        <option value="1kg">1kg</option>
+                    </select>
+                    <p class="price" id="price6">R0.00</p>
+                    <button class="add-to-cart">Add to Cart</button>
+					<button onclick="showIngredients('Powdered Papaya', '')">View Ingredients</button>
+				</div>	
+                <div class="products-card">
+				    <div class="coming-soon-label">Coming Soon</div>
+                    <img src="F-OCS.jpg" alt="Organic Peanut Butter" width ="400" height ="400">
+                    <h3>Fermented Organic Carrot Salad</h3>
+                    <p> </p>
+                    <label for="sizes6">Select Size:</label>
+                    <select onchange="updatePrice(this)">
+
+                        <option value="250g">250g</option>
+                        <option value="500g">500g</option>
+                        <option value="1kg">1kg</option>
+                    </select>
+                    <p class="price" id="price6">R0.00</p>
+                    <button class="add-to-cart">Add to Cart</button>
+					<button onclick="showIngredients('Powdered Papaya', '')">View Ingredients</button>
+				</div>
+                <div class="products-card">
+				    <div class="coming-soon-label">Coming Soon</div>
+                    <img src="F-R.jpg" alt="Organic Peanut Butter" width ="400" height ="400">
+                    <h3>Fermented Radish</h3>
+                    <p> </p>
+                    <label for="sizes6">Select Size:</label>
+                    <select onchange="updatePrice(this)">
+
+                        <option value="250g">250g</option>
+                        <option value="500g">500g</option>
+                        <option value="1kg">1kg</option>
+                    </select>
+                    <p class="price" id="price6">0.00</p>
+                    <button class="add-to-cart">Add to Cart</button>
+					<button onclick="showIngredients('Powdered Papaya', '')">View Ingredients</button>
+				</div>
+                <div class="products-card">
+				    <div class="coming-soon-label">Coming Soon</div>
+                    <img src="F-RO.jpg" alt="Organic Peanut Butter" width ="400" height ="400">
+                    <h3>Fermented Organic Red-Onion</h3>
+                    <p> </p>
+                    <label for="sizes6">Select Size:</label>
+                    <select onchange="updatePrice(this)">
+
+                        <option value="250g">250g</option>
+                        <option value="500g">500g</option>
+                        <option value="1kg">1kg</option>
+                    </select>
+                    <p class="price" id="price6">R0.00</p>
+                    <button class="add-to-cart">Add to Cart</button>
+					<button onclick="showIngredients('Powdered Papaya', '')">View Ingredients</button>
+				</div>
+                <div class="products-card">
+				    <div class="coming-soon-label">Coming Soon</div>
+                    <img src="OST.jpg" alt="Organic Peanut Butter" width ="400" height ="400">
+                    <h3>Fermented Sauerkraut Twist</h3>
+                    <p> </p>
+                    <label for="sizes6">Select Size:</label>
+                    <select onchange="updatePrice(this)">
+
+                        <option value="250g">250g</option>
+                        <option value="500g">500g</option>
+                        <option value="1kg">1kg</option>
+                    </select>
+                    <p class="price" id="price6">R0.00</p>
+                    <button class="add-to-cart">Add to Cart</button>
+					<button onclick="showIngredients('Powdered Papaya', '')">View Ingredients</button>
+				</div>
+                <div class="products-card">
+				    <div class="coming-soon-label">Coming Soon</div>
+                    <img src="OS.jpg" alt="Organic Peanut Butter" width ="400" height ="400">
+                    <h3>Fermented Organic Sauerkraut</h3>
+                    <p> </p>
+                    <label for="sizes6">Select Size:</label>
+					<select onchange="updatePrice(this)">
+
+                        <option value="250g">250g</option>
+                        <option value="500g">500g</option>
+                        <option value="1kg">1kg</option>
+                    </select>
+                    <p class="price" id="price6">R0.00</p>
+                    <button class="add-to-cart">Add to Cart</button>
+					<button onclick="showIngredients('Powdered Papaya', '')">View Ingredients</button>
+				</div>
+                <div class="products-card">
+				    <div class="coming-soon-label">Coming Soon</div>
+                    <img src="MISO.jpg" alt="Organic Peanut Butter" width ="400" height ="400">
+                    <h3>Miso</h3>
+                    <p></p>
+                    <label for="sizes6">Select Size:</label>
+                    <select onchange="updatePrice(this)">
+
+                        <option value="250g">250g</option>
+                        <option value="500g">500g</option>
+                        <option value="1kg">1kg</option>
+                    </select>
+                    <p class="price" id="price6">R350.00</p>
+                    <button class="add-to-cart">Add to Cart</button>
+					<button onclick="showIngredients('Powdered Papaya', '')">View Ingredients</button>
+				</div>
+                <div class="products-card">
+				    <div class="coming-soon-label">Coming Soon</div> 
+                    <img src="RISM.jpg" alt="Organic Peanut Butter" width ="400" height ="400">
+                    <h3>Irish Seamoss Gel</h3>
+                    <p></p>
+                    <label for="sizes6">Select Size:</label>
+                    <select onchange="updatePrice(this)">
+
+                        <option value="250g">250g</option>
+                        <option value="500g">500g</option>
+                        <option value="1kg">1kg</option>
+                    </select>
+                    <p class="price" id="price6">R350.00</p>
+                    <button class="add-to-cart">Add to Cart</button>
+					<button onclick="showIngredients('Powdered Papaya', '')">View Ingredients</button>
+				</div>
+				</div class="products-section">
+			<h3>Our Powdered Blended Options</h3>
+			
+				
+				
+				 <div class="products-section">
+			<div class="products-card">
+				    <div class="coming-soon-label">Coming Soon</div>
+                    <img src="RG.jpg" alt="" width ="400" height ="400">
+                    <h3>RemissionGuard- Surveillance Powder</h3>
+                    <p>Keeps Cancer Cells in check</p>
+					<p>Natural Immune Patrol for Survivors
+                    <label for="sizes6">Select Size:</label>
+                    <select onchange="updatePrice(this)">
+                        <option value="250g">250g</option>
+                        <option value="500g">500g</option>
+                        <option value="1kg">1kg</option>
+                    </select>
+                    <p class="price" id="price6">R100.00</p>
+                    <button class="add-to-cart">Add to Cart</button>
+					<button onclick="showIngredients('Powdered Papaya', '')">View Ingredients</button>
+				</div>	
+			<div class="products-card">
+				    <div class="coming-soon-label">Coming Soon</div>
+                    <img src="OV.jpg" alt="" width ="400" height ="400">
+                    <h3>OncoVital- Breast Defence Powder Blend</h3>
+                    <p>Nourish, Protect& Thrive</p>
+                    <label for="sizes6">Select Size:</label>
+                    <select onchange="updatePrice(this)">
+                        <option value="250g">250g</option>
+                        <option value="500g">500g</option>
+                        <option value="1kg">1kg</option>
+                    </select>
+                    <p class="price" id="price6">R100.00</p>
+                    <button class="add-to-cart">Add to Cart</button>
+					<button onclick="showIngredients('Powdered Papaya', '')">View Ingredients</button>
+				</div>	
+			<div class="products-card">
+				    <div class="coming-soon-label">Coming Soon</div>
+                    <img src="CC.jpg" alt="" width ="400" height ="400">
+                    <h3>Chemo-Calm AntiNausea Powder Blend</h3>
+                    <p>Gentle Relief from Treatment Induced Nausea.</p>
+					<p>Nature's Comfort in Every Sip</p>
+                    <label for="sizes6">Select Size:</label>
+                    <select onchange="updatePrice(this)">
+                        <option value="150g">150g</option>
+                        <option value="250g">250g</option>
+                        <option value="500g">500g</option>
+                    </select>
+                    <p class="price" id="price6">R100.00</p>
+                    <button class="add-to-cart">Add to Cart</button>
+					<button onclick="showIngredients('Powdered Papaya', '')">View Ingredients</button>
+				</div>	
+			<div class="products-card">
+				    <div class="coming-soon-label">Coming Soon</div>
+                    <img src="DS.jpg" alt="" width ="400" height ="400">
+                    <h3>Diabetes Support Powder Blend</h3>
+                    <p>Nature's Formula for Diabetic Recovery.</p>
+					<p>Real Food. Real Healing. Real Hope</p>
+                    <label for="sizes6">Select Size:</label>
+                    <select onchange="updatePrice(this)">
+                        <option value="150g">150g</option>
+                        <option value="250g">250g</option>
+                        <option value="500g">500g</option>
+                    </select>
+                    <p class="price" id="price6">R100.00</p>
+                    <button class="add-to-cart">Add to Cart</button>
+					<button onclick="showIngredients('Powdered Papaya', '')">View Ingredients</button>
+				</div>	
+			<div class="products-card">
+				    <div class="coming-soon-label">Coming Soon</div>
+                    <img src="LG1.jpg" alt="" width ="400" height ="400">
+                    <h3>Leaky-Gut Repair Powder Blend</h3>
+                    <p>Seal the leaks, heal the gut</p>
+					<p>Your second chance starts inside</p>
+                    <label for="sizes6">Select Size:</label>
+                    <select onchange="updatePrice(this)">
+                        <option value="150g">150g</option>
+                        <option value="250g">250g</option>
+                        <option value="500g">500g</option>
+                    </select>
+                    <p class="price" id="price6">R100.00</p>
+                    <button class="add-to-cart">Add to Cart</button>
+					<button onclick="showIngredients('Powdered Papaya', '')">View Ingredients</button>
+				</div>	
+			<div class="products-card">
+				    <div class="coming-soon-label">Coming Soon</div>
+                    <img src="CF.jpg" alt="" width ="400" height ="400">
+                    <h3>Colon Flush Reset Powder Blend</h3>
+                    <p>Deep Clean your gut. Healing starts from within</p>
+                    <label for="sizes6">Select Size:</label>
+                    <select onchange="updatePrice(this)">
+                        <option value="150g">150g</option>
+                        <option value="250g">250g</option>
+                        <option value="500g">500g</option>
+                    </select>
+                    <p class="price" id="price6">R100.00</p>
+                    <button class="add-to-cart">Add to Cart</button>
+					<button onclick="showIngredients('Powdered Papaya', '')">View Ingredients</button>
+				</div>	
+			<div class="products-card">
+				    <div class="coming-soon-label">Coming Soon</div>
+                    <img src="CG.jpg" alt="" width ="400" height ="400">
+                    <h3>Cognitive & Gut Powder Blend</h3>
+                    <p>The missing link between Gut health and Brainpower!</p>
+                    <label for="sizes6">Select Size:</label>
+                    <select onchange="updatePrice(this)">
+                        <option value="150g">150g</option>
+                        <option value="250g">250g</option>
+                        <option value="500g">500g</option>
+                    </select>
+                    <p class="price" id="price6">R100.00</p>
+                    <button class="add-to-cart">Add to Cart</button>
+					<button onclick="showIngredients('Powdered Papaya', '')">View Ingredients</button>
+				</div>	
+			<div class="products-card">
+				    <div class="coming-soon-label">Coming Soon</div>
+                    <img src="CN.jpg" alt="" width ="400" height ="400">
+                    <h3>Calming& Neuroprotec Powder Blend</h3>
+                    <p>Nature's Chill Pill for Overwhelmed Brains</p>
+                    <label for="sizes6">Select Size:</label>
+                    <select onchange="updatePrice(this)">
+                        <option value="150g">150g</option>
+                        <option value="250g">250g</option>
+                        <option value="500g">500g</option>
+                    </select>
+                    <p class="price" id="price6">R100.00</p>
+                    <button class="add-to-cart">Add to Cart</button>
+					<button onclick="showIngredients('Powdered Papaya', '')">View Ingredients</button>
+				</div>	
+			<div class="products-card">
+				    <div class="coming-soon-label">Coming Soon</div>
+                    <img src="A.jpg" alt="" width ="400" height ="400">
+                    <h3>ArthriEase Powder Blend</h3>
+                    <p>Move Freely. Live fully</p>
+                    <label for="sizes6">Select Size:</label>
+                    <select onchange="updatePrice(this)">
+                        <option value="150g">150g</option>
+                        <option value="250g">250g</option>
+                        <option value="500g">500g</option>
+                    </select>
+                    <p class="price" id="price6">R100.00</p>
+                    <button class="add-to-cart">Add to Cart</button>
+					<button onclick="showIngredients('Powdered Papaya', '')">View Ingredients</button>
+				</div>	
+			<div class="products-card">
+				    <div class="coming-soon-label">Coming Soon</div>
+                    <img src="AG.jpg" alt="" width ="400" height ="400">
+                    <h3>AlkaPure Greens Powder Blend</h3>
+                    <p>Perfection in pH balance</p>
+                    <label for="sizes6">Select Size:</label>
+                    <select onchange="updatePrice(this)">
+                        <option value="150g">150g</option>
+                        <option value="250g">250g</option>
+                        <option value="500g">500g</option>
+                    </select>
+                    <p class="price" id="price6">R100.00</p>
+                    <button class="add-to-cart">Add to Cart</button>
+					<button onclick="showIngredients('Powdered Papaya', '')">View Ingredients</button>
+				</div>	
+			<div class="products-card">
+				    <div class="coming-soon-label">Coming Soon</div>
+                    <img src="ZC.jpg" alt="" width ="400" height ="400">
+                    <h3>ZenZest Calming Powder Blend</h3>
+                    <p>From Chaos to Calm-Naturally</p>
+                    <label for="sizes6">Select Size:</label>
+                    <select onchange="updatePrice(this)">
+                        <option value="150g">150g</option>
+                        <option value="250g">250g</option>
+                        <option value="500g">500g</option>
+                    </select>
+                    
+					<p class="price" id="price6">R150.00</p>
+                    <button class="add-to-cart">Add to Cart</button>
+					<button onclick="showIngredients('Powdered Papaya', '')">View Ingredients</button>
+				</div>	
+			<div class="products-card">
+				    <div class="coming-soon-label">Coming Soon</div>
+                    <img src="TT.jpg" alt="" width ="400" height ="400">
+                    <h3>TummyTammer Powder Blend</h3>
+                    <p>Soothe the gut. Calm the mind</p>
+                    <label for="sizes6">Select Size:</label>
+                    <select onchange="updatePrice(this)">
+                        <option value="150g">150g</option>
+                        <option value="250g">250g</option>
+                        <option value="500g">500g</option>
+                    </select>
+          
+					<p class="price" id="price6">R150.00</p>
+                    <button class="add-to-cart">Add to Cart</button>
+					<button onclick="showIngredients('Powdered Papaya', '')">View Ingredients</button>
+				</div>	
+			<div class="products-card">
+				    <div class="coming-soon-label">Coming Soon</div>
+                    <img src="PS.jpg" alt="" width ="400" height ="400">
+                    <h3>Prostrate Support Powder Blend</h3>
+                    <p>Men's wellness, Naturally</p>
+                    <label for="sizes6">Select Size:</label>
+                    <select onchange="updatePrice(this)">
+                        <option value="150g">150g</option>
+                        <option value="250g">250g</option>
+                        <option value="500g">500g</option>
+                    </select>
+                    
+					<p class="price" id="price6">R150.00</p>
+                    <button class="add-to-cart">Add to Cart</button>
+					<button onclick="showIngredients('Powdered Papaya', '')">View Ingredients</button>
+				</div>	
+			<div class="products-card">
+				    <div class="coming-soon-label">Coming Soon</div>
+                    <img src="NM.jpg" alt="" width ="400" height ="400">
+                    <h3>Nature's Medicine Cabinet</h3>
+                    <p>The best nature can offer</p>
+                    <label for="sizes6">Select Size:</label>
+                    <select onchange="updatePrice(this)">
+                        <option value="150g">150g</option>
+                        <option value="250g">250g</option>
+                        <option value="500g">500g</option>
+                    </select>
+                   
+					<p class="price" id="price6">R150.00</p>
+                    <button class="add-to-cart">Add to Cart</button>
+					<button onclick="showIngredients('Powdered Papaya', '')">View Ingredients</button>
+				</div>	
+			<div class="products-card">
+				    <div class="coming-soon-label">Coming Soon</div>
+                    <img src="LG.jpg" alt="" width ="400" height ="400">
+                    <h3>Liver Guard Powder Blend</h3>
+                    <p>Detox. Revitilise. Rejuvinate</p>
+                    <label for="sizes6">Select Size:</label>
+                    <select onchange="updatePrice(this)">
+                        <option value="150g">150g</option>
+                        <option value="250g">250g</option>
+                        <option value="500g">500g</option>
+                    </select>
+                    
+					<p class="price" id="price6">R150.00</p>
+                    <button class="add-to-cart">Add to Cart</button>
+					<button onclick="showIngredients('Powdered Papaya', '')">View Ingredients</button>
+				</div>	
+			<div class="products-card">
+				    <div class="coming-soon-label">Coming Soon</div>
+                    <img src="KV.jpg" alt="" width ="400" height ="400">
+                    <h3>Kidney Vital Powder Blend</h3>
+                    <p>Your natural support for healthy kidneys</p>
+                    <label for="sizes6">Select Size:</label>
+                    <select onchange="updatePrice(this)">
+                        <option value="150g">150g</option>
+                        <option value="250g">250g</option>
+                        <option value="500g">500g</option>
+                    </select>
+                    <p class="price" id="price6">R180.00</p>
+                    <button class="add-to-cart">Add to Cart</button>
+					<button onclick="showIngredients('Powdered Papaya', '')">View Ingredients</button>
+				</div>	
+			<div class="products-card">
+				    <div class="coming-soon-label">Coming Soon</div>
+                    <img src="IS.jpg" alt="" width ="400" height ="400">
+                    <h3>InflammaShield Powder Blend</h3>
+                    <p>Fight Inflammation. Naturally</p>
+                    <label for="sizes6">Select Size:</label>
+                    <select onchange="updatePrice(this)">
+                        <option value="150g">150g</option>
+                        <option value="250g">250g</option>
+                        <option value="500g">500g</option>
+                    </select>
+                    
+					<p class="price" id="price6">R150.00</p>
+                    <button class="add-to-cart">Add to Cart</button>
+					<button onclick="showIngredients('Powdered Papaya', '')">View Ingredients</button>
+				</div>	
+			<div class="products-card">
+				    <div class="coming-soon-label">Coming Soon</div>
+                    <img src="GE.jpg" alt="" width ="400" height ="400">
+                    <h3>Glow Essence Powder Blend</h3>
+                    <p>Glow from the inside out</p>
+                    <label for="sizes6">Select Size:</label>
+                    <select onchange="updatePrice(this)">
+                        <option value="150g">150g</option>
+                        <option value="250g">250g</option>
+                        <option value="500g">500g</option>
+                    </select>
+                    
+					<p class="price" id="price6">R150.00</p>
+                    <button class="add-to-cart">Add to Cart</button>
+					<button onclick="showIngredients('Powdered Papaya', '')">View Ingredients</button>
+				</div>	
+			<div class="products-card">
+				    <div class="coming-soon-label">Coming Soon</div>
+                    <img src="FFN.jpg" alt="" width ="400" height ="400">
+                    <h3>FocusFusion Neuro Powder Blend</h3>
+                    <p>Sharpens minds, one spoonful at a time</p>
+                    <label for="sizes6">Select Size:</label>
+                    <select onchange="updatePrice(this)">
+                        <option value="150g">150g</option>
+                        <option value="250g">250g</option>
+                        <option value="500g">500g</option>
+                    </select>
+                    
+					<p class="price" id="price6">R150.00</p>
+                    <button class="add-to-cart">Add to Cart</button>
+					<button onclick="showIngredients('Powdered Papaya', '')">View Ingredients</button>
+				</div>	
+			<div class="products-card">
+				    <div class="coming-soon-label">Coming Soon</div>
+                    <img src="FF1.jpg" alt="" width ="400" height ="400">
+                    <h3>FloraFuel Powder Blend</h3>
+                    <p>Your ultimate gut support</p>
+                    <label for="sizes6">Select Size:</label>
+                    <select onchange="updatePrice(this)">
+                        <option value="150g">150g</option>
+                        <option value="250g">250g</option>
+                        <option value="500g">500g</option>
+                    </select>
+                    
+					<p class="price" id="price6">R150.00</p>
+                    <button class="add-to-cart">Add to Cart</button>
+					<button onclick="showIngredients('Powdered Papaya', '')">View Ingredients</button>
+				</div>	
+			<div class="products-card">
+				    <div class="coming-soon-label">Coming Soon</div>
+                    <img src="FF.jpg" alt="" width ="400" height ="400">
+                    <h3>FiberFuel Powder Blend</h3>
+                    <p>Prebiotic-rich for Smooth Digestion</p>
+                    <label for="sizes6">Select Size:</label>
+                    <select onchange="updatePrice(this)">
+                        <option value="150g">150g</option>
+                        <option value="250g">250g</option>
+                        <option value="500g">500g</option>
+                    </select>
+                    
+					<p class="price" id="price6">R150.00</p>
+                    <button class="add-to-cart">Add to Cart</button>
+					<button onclick="showIngredients('Powdered Papaya', '')">View Ingredients</button>
+				</div>	
+			<div class="products-card">
+				    <div class="coming-soon-label">Coming Soon</div>
+                    <img src="FV.jpg" alt="" width ="400" height ="400">
+                    <h3>FemmeVital Powder Blend</h3>
+                    <p>Hormonal balance in every scoop</p>
+                    <label for="sizes6">Select Size:</label>
+                    <select onchange="updatePrice(this)">
+                        <option value="150g">150g</option>
+                        <option value="250g">250g</option>
+                        <option value="500g">500g</option>
+                    </select>
+                   
+					<p class="price" id="price6">R150.00</p>
+                    <button class="add-to-cart">Add to Cart</button>
+					<button onclick="showIngredients('Powdered Papaya', '')">View Ingredients</button>
+				</div>	
+			<div class="products-card">
+				    <div class="coming-soon-label">Coming Soon</div>
+                    <img src="DA.jpg" alt="" width ="400" height ="400">
+                    <h3>Digestive& Anti-inflammatory Powder Blend</h3>
+                    <p>The ultimate gut fix for picky eaters& sensitive tummies</p>
+                    <label for="sizes6">Select Size:</label>
+                    <select onchange="updatePrice(this)">
+                        <option value="150g">150g</option>
+                        <option value="250g">250g</option>
+                        <option value="500g">500g</option>
+                    </select>
+                    
+					<p class="price" id="price6">R150.00</p>
+                    <button class="add-to-cart">Add to Cart</button>
+					<button onclick="showIngredients('Powdered Papaya', '')">View Ingredients</button>
+				</div>	
+			<div class="products-card">
+				    <div class="coming-soon-label">Coming Soon</div>
+                    <img src="DE.jpg" alt="" width ="400" height ="400">
+                    <h3>Digest Ease Powder Blend</h3>
+                    <p>Gentle support for a healthy gut</p>
+                    <label for="sizes6">Select Size:</label>
+                    <select onchange="updatePrice(this)">
+                        <option value="150g">150g</option>
+                        <option value="250g">250g</option>
+                        <option value="500g">500g</option>
+                    </select>
+                    <p class="price" id="price6">R150.00</p>
+                    <button class="add-to-cart">Add to Cart</button>
+					<button onclick="showIngredients('Powdered Papaya', '')">View Ingredients</button>
+
+				</div>	
+			
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Beracah Foods|All Rights Reserved
+    </footer>
+	 <!-- Inline JavaScript -->
+   <script>
+const productPrices = {
+  // 🔹 Powdered Products
+  
+  "P-CAR": { "150g": 40.00, "250g": 75.00, "500g": 140.00 },
+  "P-CEL": { "150g": 32.00, "250g": 58.00, "500g": 105.00 },
+  "P-ROS": { "150g": 38.00, "250g": 70.00, "500g": 130.00 },
+  "P-BEE": { "150g": 45.00, "250g": 85.00, "500g": 155.00 },
+  "P-PCA": { "150g": 42.00, "250g": 80.00, "500g": 150.00 },
+  "P-KAL": { "150g": 46.00, "250g": 88.00, "500g": 158.00 },
+  "P-SPI": { "150g": 43.00, "250g": 83.00, "500g": 150.00 },
+  "P-MOR": { "150g": 47.00, "250g": 89.00, "500g": 160.00 },
+  "P-PSWE": { "150g": 46.00, "250g": 86.00, "500g": 155.00 },
+  "P-YSWE": { "150g": 44.00, "250g": 84.00, "500g": 152.00 },
+  "Peas Protein Powder": { "150g": 55.00, "250g": 100.00, "500g": 180.00 },
+  "Sun-Dried Peaches": { "250g": 49.00, "500g": 90.00, "1kg": 165.00 },
+
+  // 🔹 Freeze-Dried Products
+  "FD-BEA": {  "250g": 76.00, "1kg": 140.00 },
+  "FD-PEA": {  "250g": 82.00, "1kg": 150.00 },
+  "FD-CAR": {  "250g": 85.00, "1kg": 155.00 },
+  "FD-TOM": {  "250g": 70.00, "1kg": 130.00 },
+  "FD-EGGS": { "250g": 110.00, "1kg": 200.00 },
+  "FD-SWE": {  "250g": 88.00, "1kg": 160.00 },
+  "FD-KAL": {  "250g": 96.00, "1kg": 170.00 },
+  "FD-SPI": {  "250g": 84.00, "1kg": 155.00 },
+  "FD-COW": {  "250g": 100.00, "1kg": 180.00 },
+  "FD-CNOO": {  "250g": 105.00, "1kg": 190.00 },
+  "FD-MIX": {  "250g": 90.00, "1kg": 160.00 },
+  "FD-CBON": {  "250g": 102.00, "1kg": 185.00 },
+
+  // 🔹 Bottled Products
+  "F-BRC": { "350g": 75.00, "250g": 120.00, "1kg": 220.00 },
+  "F-BC":  { "350g": 75.00, "250g": 122.00, "1kg": 225.00 },
+  "F-BB":  { "350g": 75.00, "250g": 118.00, "1kg": 210.00 },
+  "F-BCA": { "350g": 75.00, "250g": 119.00, "1kg": 215.00 },
+  "F-CGG": { "350g": 75.00, "250g": 125.00, "1kg": 230.00 },
+  "F-CC":  { "350g": 75.00, "250g": 130.00, "1kg": 240.00 },
+  "F-FDC": { "350g": 75.00, "250g": 124.00, "1kg": 228.00 },
+  "F-OB":  { "350g": 75.00, "250g": 112.00, "1kg": 205.00 },
+  "F-OCS": { "350g": 75.00, "250g": 117.00, "1kg": 212.00 },
+  "F-R":   { "350g": 75.00, "250g": 110.00, "1kg": 200.00 },
+  "F-RO":  { "350g": 75.00, "250g": 115.00, "1kg": 208.00 },
+  "OST":   { "350g": 75.00, "250g": 121.00, "1kg": 218.00 },
+  "OS":    { "350g": 75.00, "250g": 122.00, "1kg": 220.00 },
+  "MISO":  { "350g": 75.00, "250g": 128.00, "1kg": 235.00 },
+  "RISM":  { "350g": 75.00, "250g": 130.00, "1kg": 240.00 },
+  
+  // 🔹Blended Products
+  "FF1": { "150g": 150.00, "250g": 255.00, "500g": 430.00},
+  "FF": { "150g": 150.00, "250g": 255.00, "500g": 430.00 },
+  "RG": { "150g": 150.00, "250g": 255.00, "500g": 430.00 },
+  "ZC": { "150g": 180.00, "250g": 365.50, "500g": 548.25 },
+  "LG": { "150g": 150.00, "250g": 255.00, "500g": 430.00 },
+  "LG1": { "150g": 180.00, "250g": 310.00, "500g": 450.00 },
+  "IS": { "150g": 150.00, "250g": 255.00, "500g": 430.00 },
+  "KV": { "150g": 180.00, "250g": 306.00, "500g": 420.00 },
+  "GE": { "150g": 150.00, "250g": 255.00, "500g": 430.00 },
+  "DS": { "150g": 150.00, "250g": 255.00, "500g": 430.00 },
+  "CN": { "150g": 215.00, "250g": 365.50, "500g": 548.25 },
+  "CF": { "150g": 180.00, "250g": 310.00, "500g": 450.00 },
+  "DA": { "150g": 180.00, "250g": 310.00, "500g": 450.00 },
+  "PS": { "150g": 215.00, "250g": 365.50, "500g": 548.25 },
+  "OB": { "150g": 180.00, "250g": 306.00, "500g": 420.00 },
+  "CC": { "150g": 180.00, "250g": 306.00, "500g": 420.00 },
+  "CG": { "150g": 150.00, "25og": 255.00, "500g": 430.00 },
+  "A": { "150g": 150.00, "250g": 255.00, "500g": 430.00 },
+  "AG": { "150g": 150.00, "250g": 255.00, "500g": 430.00 },
+  "TT": { "150g": 150.00, "250g": 255.00, "500g": 430.00 },
+  "NM": { "150g": 150.00, "250g": 255.00, "500g": 430.00 },
+  "FFN": { "150g": 150.00, "250g": 255.00, "500g": 430.00},
+  "FV": { "150g": 150.00, "250g": 255.00, "500g": 430.00 },
+  "DE": { "150g": 150.00, "250g": 255.00, "500g": 430.00 },
+  
+  
+};
+
+function updatePrice(selectElement) {
+  const productCard = selectElement.closest('.products-card, .products-cardz');
+  const imgSrc = productCard.querySelector('img').getAttribute('src');
+  let productKey = imgSrc.replace(/\.(jpg|png)$/i, '');
+  productKey = productKey.replace(/.*[\/\\]/, ''); // removes folders if any
+
+  const selectedSize = selectElement.value;
+  const priceElement = productCard.querySelector('.price');
+  const price = productPrices[productKey]?.[selectedSize];
+
+  priceElement.textContent = price ? `R${price.toFixed(2)}` : 'Price not available';
+}
+function showIngredients(productName, ingredients) {
+    document.getElementById("modalTitle").innerText = productName;
+    document.getElementById("modalIngredients").innerText = ingredients;
+    document.getElementById("ingredientsModal").style.display = "flex";
+}
+</script>
+
+</script>
+
+
+    </script>
+<!-- Ingredients Modal -->
+<div id="ingredientsModal" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.6); justify-content:center; align-items:center; z-index:9999;">
+  <div style="background:white; padding:20px; border-radius:10px; width:300px; max-width:90%; box-shadow:0 0 10px rgba(0,0,0,0.3); position:relative;">
+    <h3 id="modalTitle">Product Name</h3>
+    <p id="modalIngredients">Ingredients will go here...</p>
+    <button onclick="document.getElementById('ingredientsModal').style.display='none'" style="background:#06402B; color:white; border:none; padding:8px 12px; border-radius:6px; margin-top:10px;">Close</button>
+  </div>
+</div>
+
+</body>
+</html>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
